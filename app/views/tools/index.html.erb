@@ -1,1 +1,7 @@
-<h1>3 Tools</h1>
+<h1><%= pluralize(@tools.size, 'Tool') %></h1>
+
+<ul>
+    <% @tools.each do |tool| %>
+        <li><%= tool %></li>
+    <% end %>
+</ul>
