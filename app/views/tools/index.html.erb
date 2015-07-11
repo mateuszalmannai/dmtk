@@ -2,6 +2,16 @@
 
 <ul>
     <% @tools.each do |tool| %>
-        <li><%= tool %></li>
+        <strong><li><%= tool.name %></li></strong>
     <% end %>
 </ul>
+<% @tools.each do |tool| %>
+  <article>
+    <header>
+      <h2><%= tool.name %></h2>
+    </header>
+    <p>
+      <%= tool.description %>
+    </p>
+  </article>
+<% end %>

@@ -1,5 +1,5 @@
 class ToolsController < ApplicationController
   def index
-    @tools = ["Tool 1", "Tool 2", "Tool 3"]
+    @tools = Tool.all
   end
 end
