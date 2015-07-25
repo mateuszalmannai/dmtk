@@ -1,14 +1,9 @@
 <h1><%= pluralize(@tools.size, 'Tool') %></h1>
 
-<ul>
-    <% @tools.each do |tool| %>
-        <strong><li><%= tool.name %></li></strong>
-    <% end %>
-</ul>
 <% @tools.each do |tool| %>
   <article>
     <header>
-      <h2><%= tool.name %></h2>
+      <h2><%= link_to tool.name, tool %></h2>
     </header>
     <p>
       <%= tool.description %>
