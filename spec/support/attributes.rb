@@ -4,7 +4,6 @@
 # existing attributes hash, i.e. to change the description attribute value:
 # tool_attributes(desription: "This, that and the other...")
 #
-
 def tool_attributes(overrides = {})
   {
     name: "Pros and Cons",

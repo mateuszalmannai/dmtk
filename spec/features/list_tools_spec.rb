@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 describe "Viewing the list of tools" do
   it "shows the tools" do
     tool1 = Tool.create(name: "Pros and Cons",
