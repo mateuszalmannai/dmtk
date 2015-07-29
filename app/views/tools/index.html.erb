@@ -8,5 +8,9 @@
     <p>
       <%= truncate(tool.description, length: 35, separator: ' ') %>
     </p>
+    <tr>
+      <th>Price:</th>
+      <td><%= format_price(tool) %></td>
+    </tr>
   </article>
 <% end %>

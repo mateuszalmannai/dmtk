@@ -9,6 +9,7 @@ def tool_attributes(overrides = {})
     name: "Pros and Cons",
     description: "Weighing up pros and cons can speed up the decision-making process,
                   improve your understanding of the situation and help you avoid decision-making
-                  paralysis."
+                  paralysis.",
+    price: 10.00
   }.merge(overrides)
 end
