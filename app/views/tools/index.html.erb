@@ -6,7 +6,7 @@
       <h2><%= link_to tool.name, tool %></h2>
     </header>
     <p>
-      <%= tool.description %>
+      <%= truncate(tool.description, length: 35, separator: ' ') %>
     </p>
   </article>
 <% end %>

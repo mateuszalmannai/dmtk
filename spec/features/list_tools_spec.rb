@@ -31,11 +31,11 @@ describe "Viewing the list of tools" do
     expect(page).to have_text(tool5.name)
     expect(page).to have_text(tool6.name)
 
-    expect(page).to have_text(tool1.description)
-    expect(page).to have_text(tool2.description)
-    expect(page).to have_text(tool3.description)
-    expect(page).to have_text(tool4.description)
-    expect(page).to have_text(tool5.description)
-    expect(page).to have_text(tool6.description)
+    expect(page).to have_text(tool1.description[0..10])
+    expect(page).to have_text(tool2.description[0..10])
+    expect(page).to have_text(tool3.description[0..10])
+    expect(page).to have_text(tool4.description[0..10])
+    expect(page).to have_text(tool5.description[0..10])
+    expect(page).to have_text(tool6.description[0..10])
   end
 end
