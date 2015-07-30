@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get "tools" => "tools#index"
   get "tools/:id" => "tools#show", as: "tool"
   get "tools/:id/edit" => "tools#edit", as: "edit_tool"
+  patch "tools/:id" => "tools#update"
 end
