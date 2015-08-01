@@ -1,5 +1,7 @@
 <h1><%= pluralize(@tools.size, 'Tool') %></h1>
 
+<%= link_to "Add New Tool", new_tool_path %>
+
 <% @tools.each do |tool| %>
   <article>
     <header>
