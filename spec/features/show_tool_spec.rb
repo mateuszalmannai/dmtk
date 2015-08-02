@@ -24,5 +24,11 @@ describe "Viewing an individual tool" do
 
     expect(page).to have_text("Free")
   end
+
+  it "displays the footer partial" do
+    setup_tool
+
+    expect(page).to have_text("The Pragmatic Studio")
+  end
 end
 

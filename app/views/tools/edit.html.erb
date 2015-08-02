@@ -1,18 +1,3 @@
 <h1>Editing Tool: <%= @tool.name %></h1>
-<%= form_for(@tool) do |f| %>
-    <p>
-      <%= f.label :name %><br/>
-      <%= f.text_field :name %>
-    </p>
-    <p>
-      <%= f.label :description %><br/>
-      <%= f.text_area :description, cols: 40, rows: 7 %>
-    </p>
-    <p>
-      <%= f.label :price %><br/>
-      <%= f.number_field :price %>
-    </p>
-    <p>
-      <%= f.submit %><br/>
-    </p>
-<% end %>
+<%= render 'form' %>
+<%= render 'footer' %>

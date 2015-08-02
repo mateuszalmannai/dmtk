@@ -38,4 +38,10 @@ describe "Viewing the list of tools" do
     expect(page).to have_text(tool5.description[0..10])
     expect(page).to have_text(tool6.description[0..10])
   end
+
+  it "displays the footer partial" do
+    setup_tool
+
+    expect(page).to have_text("The Pragmatic Studio")
+  end
 end
