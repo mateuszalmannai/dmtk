@@ -26,7 +26,9 @@ describe "Viewing an individual tool" do
   end
 
   it "displays the footer partial" do
-    setup_tool
+    tool = Tool.create(tool_attributes)
+
+    visit tool_url(tool)
 
     expect(page).to have_text("The Pragmatic Studio")
   end

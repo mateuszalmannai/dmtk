@@ -29,8 +29,13 @@ class ToolsController < ApplicationController
     redirect_to @tool
   end
 
-  private
+  def destroy
+    @tool = Tool.find(params[:id])
+    @tool.destroy
+    redirect_to tools_url
+  end
 
+  private
   def tool_params
     params.require(:tool).permit(:name, :description, :price)
   end

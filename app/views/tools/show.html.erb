@@ -12,6 +12,8 @@
   </p>
 </article>
 
-<%= link_to "All Tools", tools_path %>
-<%= link_to "Edit", edit_tool_path(@tool) %>
+<%= link_to "All Tools", tools_path %> |
+<%= link_to "Edit", edit_tool_path(@tool) %> |
+<%= link_to "Delete", tool_path(@tool), method: :delete, data: {confirm: 'Are you sure?'} %>
+<%= render 'footer' %>
 
