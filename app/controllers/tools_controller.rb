@@ -1,6 +1,6 @@
 class ToolsController < ApplicationController
   def index
-    @tools = Tool.all
+    @tools = Tool.not_overpriced
   end
 
   def show
