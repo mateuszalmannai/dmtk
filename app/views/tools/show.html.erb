@@ -1,5 +1,6 @@
 <article>
   <header>
+    <%= image_for(@tool) %>
     <h1><%= @tool.name %></h1>
   </header>
   <h2>Description</h2>
@@ -9,6 +10,10 @@
   <h2>Price</h2>
   <p>
     <%= format_price(@tool) %>
+  </p>
+  <h3>Comment</h3>
+  <p>
+    <%= @tool.comment %>
   </p>
 </article>
 

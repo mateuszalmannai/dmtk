@@ -43,6 +43,9 @@ describe "Viewing the list of tools" do
     expect(page).to have_text(tool4.description[0..10])
     expect(page).to have_text(tool5.description[0..10])
     expect(page).to have_text(tool6.description[0..10])
+
+    expect(page).to have_text(tool1.comment)
+    expect(page).to have_selector("img[src$='#{tool1.image_file_name}']")
   end
 
   it "displays the footer partial" do

@@ -39,5 +39,7 @@ def create_new_tool
   fill_in "tool_name", with: "New Tool Name"
   fill_in "tool_description", with: "A very useful tool you should definitely know about"
   fill_in "tool_price", with: "10.00"
+  fill_in "Comment", with: "I use this all the time"
+  fill_in "Image file name", with: "tool.png"
 end
 

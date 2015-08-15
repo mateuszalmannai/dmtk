@@ -7,6 +7,8 @@ describe "Viewing an individual tool" do
     expect(page).to have_text(tool.name)
     expect(page).to have_text("$10.00")
     expect(page).to have_text("This, that and the other...")
+    expect(page).to have_text(tool.comment)
+    expect(page).to have_selector("img[src$='#{tool.image_file_name}']")
   end
 
   it "shows the price if the price is not $0" do

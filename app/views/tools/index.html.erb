@@ -1,19 +1,32 @@
 <h1><%= pluralize(@tools.size, 'Tool') %></h1>
+<h4>because in a world of infinite choice, making a single decision becomes increasingly tough</h4>
+In psychology, decision-making is regarded as the cognitive process resulting in the selection of a belief or a course of
+action among several alternative possibilities.
+Every decision-making process produces a final choice that may or may not prompt action.
+
+Like so many things, smart decision making can benefit from the addition of structure, focus and a bit of metaphor.
+
+While imperfect in their own ways, the kinds of tools that support this mental corralling can help tremendously in
+quiting the chaos, surveiying the available options, and then collecting and evaluating the information you need to
+choose the best course of action.<br/>
 
 <%= link_to "Add New Tool", new_tool_path %>
 
 <% @tools.each do |tool| %>
   <article>
     <header>
+      <%= image_tag(tool.image_file_name) %>
       <h2><%= link_to tool.name, tool %></h2>
     </header>
     <p>
       <%= truncate(tool.description, length: 35, separator: ' ') %>
     </p>
-    <tr>
-      <th>Price:</th>
-      <td><%= format_price(tool) %></td>
-    </tr>
+    <table>
+      <tr>
+        <th>Price:</th>
+        <td><%= format_price(tool) %></td>
+      </tr>
+    </table>
   </article>
 <% end %>
 <%= render 'footer' %>
