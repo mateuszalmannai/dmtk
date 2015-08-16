@@ -32,7 +32,7 @@ describe "Viewing an individual tool" do
 
     visit tool_url(tool)
 
-    expect(page).to have_text("The Pragmatic Studio")
+    expect(page).to have_text("IsmSkism")
   end
 end
 

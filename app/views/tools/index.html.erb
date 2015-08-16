@@ -10,8 +10,6 @@ While imperfect in their own ways, the kinds of tools that support this mental c
 quiting the chaos, surveiying the available options, and then collecting and evaluating the information you need to
 choose the best course of action.<br/>
 
-<%= link_to "Add New Tool", new_tool_path %>
-
 <% @tools.each do |tool| %>
   <article>
     <header>
@@ -29,4 +27,3 @@ choose the best course of action.<br/>
     </table>
   </article>
 <% end %>
-<%= render 'footer' %>

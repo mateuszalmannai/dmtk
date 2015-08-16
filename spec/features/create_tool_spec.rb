@@ -23,7 +23,7 @@ describe 'Creating a new tool' do
   it "displays the footer partial" do
     setup_tool
 
-    expect(page).to have_text("The Pragmatic Studio")
+    expect(page).to have_text("IsmSkism")
   end
 end
 

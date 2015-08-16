@@ -54,7 +54,7 @@ describe "Viewing the list of tools" do
 
     visit tools_url
 
-    expect(page).to have_text("The Pragmatic Studio")
+    expect(page).to have_text("IsmSkism")
   end
 
 
