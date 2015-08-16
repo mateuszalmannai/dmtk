@@ -10,16 +10,18 @@ While imperfect in their own ways, the kinds of tools that support this mental c
 quiting the chaos, surveiying the available options, and then collecting and evaluating the information you need to
 choose the best course of action.<br/>
 
+
 <% @tools.each do |tool| %>
-  <article>
+  <article class="tool">
     <header>
-      <%= image_tag(tool.image_file_name) %>
       <h2><%= link_to tool.name, tool %></h2>
+
     </header>
     <p>
       <%= truncate(tool.description, length: 35, separator: ' ') %>
     </p>
     <table>
+      <tr><%= image_for(tool) %></tr>
       <tr>
         <th>Price:</th>
         <td><%= format_price(tool) %></td>
